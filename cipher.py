@@ -7,22 +7,21 @@ from tkinter import messagebox as msg
 Tk().withdraw()
 l = Cipher()
 
-__version__ = '0.2.9'
+__version__ = '0.2.10'
 
 def _help():
-    print('加密或解密一个文件。')
-    print('')
-    print('cipher [--lock | --unlock] [filename_in] [--echo | filename_out]')
-    print('')
-    print('    没有参数      显示帮助。这和键入 /? 是一样的。')
-    print('    /?            显示帮助。这和不键入任何选项是一样的。')
-    print('    version       显示版本号。')
-    print('    lock          加密一个文件。')
-    print('    unlock        解密一个文件。')
-    print('    filename_in   被加密/解密的文件名或路径。')
-    print('    echo          开启后不用输出文件，直接显示解密文字。')
-    print('    filename_out  加密/解密后输出的文件名或路径，可以使用echo参数代替。')
-    print('')
+    h = """加密或解密一个文件。\n
+cipher [--lock filename_in | --unlock filename_in [--echo | [filename_out]]] [--version]
+
+    没有参数                    显示帮助。这和键入 /? 是一样的。
+    /?                          显示帮助。这和不键入任何选项是一样的。
+    --version                   显示版本号。
+    --lock   filename_in        加密一个文件。
+    --unlock filename_in        解密一个文件。
+    --echo                      开启后不用输出文件，直接显示解密文字。
+    [filename_out]              加密/解密后输出的文件名或路径，可以使用echo参数代替。
+    """
+    print(h)
     
 try:
     tmp = argv[1]
