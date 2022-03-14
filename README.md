@@ -1,7 +1,7 @@
 # cipher
 一个简单的命令行程序，可以将输入的英文加密
 
-    cipher [--lock | --unlock] [filename_in] [--echo | filename_out]
+    cipher [--lock filename_in | --unlock filename_in [--echo | filename_out]] [--version]
     
         没有参数      显示帮助。这和键入 /? 是一样的。
         /?            显示帮助。这和不键入任何选项是一样的。
