@@ -3,7 +3,7 @@
 
     cipher [--lock filename_in | --unlock filename_in [--echo | [filename_out]]] [--version]
     
-        没有参数                     显示帮助。这和键入 /? 是一样的。
+        没有参数                    显示帮助。这和键入 /? 是一样的。
         /?                          显示帮助。这和不键入任何选项是一样的。
         --version                   显示版本号。
         --lock   filename_in        加密一个文件。
